@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <title>Voting System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>OS Vote</h1>
+        <p>Vote for your favourite OS to develop on</p>
+        <form id="vote-form">
+            <p>
+                <input type="radio" name="os" id="windows" value="Windows">
+                <label for="windows">Windows</label>
+            </p>
+
+            <p>
+                <input type="radio" name="os" id="macos" value="MacOS">
+                <label for="macos">MacOS</label>
+            </p>
+
+            <p>
+                <input type="radio" name="os" id="linux" value="Linux">
+                <label for="linux">Linux Distro</label>
+            </p>
+
+            <p>
+                <input type="radio" name="os" id="other" value="Other">
+                <label for="other">Windows</label>
+            </p>
+
+            <input type="submit" value="Vote" class="btn btn-primary">
+        </form>
+
+        <br><br>
+
+        <div id="chartContainer" style="height: 300px;width:100%"></div>
+
+    </div>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.3.1/pusher.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
